@@ -2,6 +2,7 @@
 using MediatR;
 using Octopus.Constructor.Domain;
 using Octopus.Constructor.Domain.Repositories;
+using Octopus.Kernel.Domain;
 
 namespace Octopus.Constructor.Application.Features.Templates.CreateTemplate;
 

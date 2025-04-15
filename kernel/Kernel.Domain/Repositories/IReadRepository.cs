@@ -1,6 +1,6 @@
-﻿using Octopus.Constructor.Domain.Entities;
+﻿using Octopus.Kernel.Domain.Entities;
 
-namespace Octopus.Constructor.Infrastructure;
+namespace Octopus.Kernel.Domain.Repositories;
 
 /// <summary>
 /// Read repository.

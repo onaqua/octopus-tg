@@ -1,4 +1,5 @@
 ﻿using Octopus.Constructor.Domain;
+using Octopus.Kernel.Infrastructure;
 
 namespace Octopus.Constructor.Infrastructure.Templates.Specifications;
 

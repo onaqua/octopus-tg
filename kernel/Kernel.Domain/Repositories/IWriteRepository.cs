@@ -1,6 +1,6 @@
-﻿using Octopus.Constructor.Domain.Entities;
+﻿using Octopus.Kernel.Domain.Entities;
 
-namespace Octopus.Constructor.Domain.Repositories;
+namespace Octopus.Kernel.Domain.Repositories;
 
 /// <summary>
 /// Write repository.

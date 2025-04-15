@@ -19,6 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\kernel\Kernel.Infrastructure\Kernel.Infrastructure.csproj" />
     <ProjectReference Include="..\Octopus.Constructor.Domain\Octopus.Constructor.Domain.csproj" />
   </ItemGroup>
 

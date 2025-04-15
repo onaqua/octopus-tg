@@ -1,12 +1,12 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Octopus.Constructor.Domain.Entities;
+using Octopus.Kernel.Domain.Entities;
 
-namespace Octopus.Constructor.Infrastructure;
+namespace Octopus.Kernel.Infrastructure;
 
-public abstract class RepositoryBase<TEntity>(DatabaseContext databaseContext)
+public abstract class RepositoryBase<TEntity>(DbSet<TEntity> set)
     where TEntity : class, IEntity
 {
-    public DbSet<TEntity> Set { get; } = databaseContext.Set<TEntity>();
+    public DbSet<TEntity> Set { get; } = set;
 
     protected IQueryable<TEntity> UseSpecification(
        SpecificationBase<TEntity> specification)

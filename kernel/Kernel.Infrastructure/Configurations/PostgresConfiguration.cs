@@ -1,8 +1,6 @@
-﻿using Microsoft.Extensions.Options;
+﻿namespace Octopus.Kernel.Infrastructure.Configurations;
 
-namespace Octopus.Constructor.Infrastructure.Configurations;
-
-internal sealed class PostgresConfiguration 
+public sealed class PostgresConfiguration 
 {
     public static readonly string SectionName = "Postgres";
 

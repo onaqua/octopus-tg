@@ -7,6 +7,9 @@ using Octopus.Constructor.Domain;
 using Octopus.Constructor.Domain.Repositories;
 using Octopus.Constructor.Infrastructure.Configurations;
 using Octopus.Constructor.Infrastructure.Repositories;
+using Octopus.Kernel.Domain;
+using Octopus.Kernel.Infrastructure;
+using Octopus.Kernel.Infrastructure.Configurations;
 
 namespace Octopus.Constructor.Infrastructure;
 

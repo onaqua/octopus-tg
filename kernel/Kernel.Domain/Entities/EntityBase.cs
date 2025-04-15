@@ -1,6 +1,4 @@
-﻿using Octopus.Constructor.Domain.Entities;
-
-namespace Octopus.Constructor.Domain;
+﻿namespace Octopus.Kernel.Domain.Entities;
 
 public abstract class EntityBase<TKey> : IEntity where TKey : IEquatable<TKey>
 {

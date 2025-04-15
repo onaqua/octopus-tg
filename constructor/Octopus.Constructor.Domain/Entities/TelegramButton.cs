@@ -1,4 +1,5 @@
 ﻿using Ardalis.Result;
+using Octopus.Kernel.Domain.Entities;
 using System.Text.Json.Serialization;
 
 namespace Octopus.Constructor.Domain;

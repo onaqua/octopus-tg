@@ -7,11 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Ardalis.Result" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\kernel\Kernel.Domain\Kernel.Domain.csproj" />
+    <ProjectReference Include="..\Kernel.Domain\Kernel.Domain.csproj" />
   </ItemGroup>
 
 </Project>

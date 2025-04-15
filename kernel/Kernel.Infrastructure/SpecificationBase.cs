@@ -1,7 +1,7 @@
-﻿using Octopus.Constructor.Domain.Entities;
+﻿using Octopus.Kernel.Domain.Entities;
 using System.Linq.Expressions;
 
-namespace Octopus.Constructor.Infrastructure;
+namespace Octopus.Kernel.Infrastructure;
 
 /// <summary>
 /// Base class for specifications.

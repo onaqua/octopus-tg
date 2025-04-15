@@ -1,4 +1,5 @@
-﻿using System.Text.Json.Serialization;
+﻿using Octopus.Kernel.Domain.Entities;
+using System.Text.Json.Serialization;
 
 namespace Octopus.Constructor.Domain;
 

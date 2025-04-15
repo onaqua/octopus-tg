@@ -1,4 +1,4 @@
-﻿namespace Octopus.Constructor.Domain;
+﻿namespace Octopus.Kernel.Domain;
 
 public interface IUnitOfWork
 {

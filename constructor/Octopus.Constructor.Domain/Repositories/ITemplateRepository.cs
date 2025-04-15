@@ -1,5 +1,4 @@
-﻿using Octopus.Constructor.Domain.Entities;
-using Octopus.Constructor.Infrastructure;
+﻿using Octopus.Kernel.Domain.Repositories;
 
 namespace Octopus.Constructor.Domain.Repositories;
 

@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Octopus.Constructor.Domain.Entities;
+using Octopus.Kernel.Domain.Entities;
 
-namespace Octopus.Constructor.Infrastructure;
+namespace Octopus.Kernel.Infrastructure;
 
 public static class SpecificationEvaluator
 {
