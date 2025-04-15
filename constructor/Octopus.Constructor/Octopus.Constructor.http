@@ -1,0 +1,6 @@
+@Octopus.Constructor_HostAddress = http://localhost:5193
+
+GET {{Octopus.Constructor_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

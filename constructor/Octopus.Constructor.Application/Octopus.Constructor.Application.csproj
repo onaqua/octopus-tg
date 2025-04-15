@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Ardalis.Result" />
+    <PackageReference Include="Ardalis.Result.AspNetCore" />
+    <PackageReference Include="FastEndpoints" />
+    <PackageReference Include="MediatR" />
+    <PackageReference Include="MediatR.Extensions.FluentValidation.AspNetCore" />
+    <PackageReference Include="Microsoft.AspNetCore.Hosting" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Octopus.Constructor.Infrastructure\Octopus.Constructor.Infrastructure.csproj" />
+    <ProjectReference Include="..\Octopus.Constructor.Shared\Octopus.Constructor.Shared.csproj" />
+  </ItemGroup>
+</Project>

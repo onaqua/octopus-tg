@@ -1,0 +1,6 @@
+@Octopus.Bot.API_HostAddress = http://localhost:5055
+
+GET {{Octopus.Bot.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
