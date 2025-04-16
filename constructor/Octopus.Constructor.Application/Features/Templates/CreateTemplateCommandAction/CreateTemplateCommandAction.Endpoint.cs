@@ -1,15 +1,16 @@
 ﻿using MediatR;
 using Octopus.Constructor.Domain;
+using Octopus.Kernel.Application;
 
 namespace Octopus.Constructor.Application.Features.Templates.CreateTemplateCommandAction;
 
-public static partial class CreateTemplateCommandSendButtonsAction
+public static partial class CreateTemplateCommandAction
 {
-    public sealed class Endpoint(ISender sender) : ResultEndpoint<Request, TelegramSendButtonsAction>
+    public sealed class Endpoint(ISender sender) : ResultEndpoint<Request, TelegramAction>
     {
         public override void Configure()
         {
-            Post("/templates/{TemplateId}/commands/actions/buttons");
+            Post("/templates/{TemplateId:guid}/commands/{CommandId:guid}/actions");
             Tags("Templates");
             Summary(s =>
             {

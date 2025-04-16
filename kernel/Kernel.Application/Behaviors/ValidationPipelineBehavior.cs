@@ -2,7 +2,7 @@
 using FluentValidation;
 using MediatR;
 
-namespace Octopus.Constructor.Application.Features.Templates;
+namespace Octopus.Kernel.Application.Features.Templates;
 
 // Обновленный ValidationPipelineBehavior
 public class ValidationPipelineBehavior<TRequest, TResponse>

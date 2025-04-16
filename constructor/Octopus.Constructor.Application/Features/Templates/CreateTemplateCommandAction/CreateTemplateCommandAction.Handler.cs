@@ -9,14 +9,14 @@ namespace Octopus.Constructor.Application.Features.Templates.CreateTemplateComma
 /// <summary>
 /// Contains functionality for creating and adding button actions to Telegram commands within templates.
 /// </summary>
-public static partial class CreateTemplateCommandSendButtonsAction
+public static partial class CreateTemplateCommandAction
 {
     /// <summary>
     /// Handler for processing requests to create and add button actions to Telegram commands.
     /// </summary>
     public sealed class Handler(
         IUnitOfWork unitOfWork,
-        ITemplateRepository templateRepository) : IRequestHandler<Request, Result<TelegramSendButtonsAction>>
+        ITemplateRepository templateRepository) : IRequestHandler<Request, Result<TelegramAction>>
     {
         /// <summary>
         /// Handles the request to create and add button actions to a specific command within a template.
@@ -27,7 +27,7 @@ public static partial class CreateTemplateCommandSendButtonsAction
         /// A Result containing the created TelegramSendButtonsAction if successful,
         /// or appropriate error information if the operation fails.
         /// </returns>
-        public async Task<Result<TelegramSendButtonsAction>> Handle(Request request, CancellationToken cancellationToken)
+        public async Task<Result<TelegramAction>> Handle(Request request, CancellationToken cancellationToken)
         {
             // Create button objects from the request data and validate them
             var createButtonsResults = request.Buttons
@@ -62,14 +62,14 @@ public static partial class CreateTemplateCommandSendButtonsAction
             var command = template.Commands.Single(command => command.Id == request.CommandId);
 
             // Create the send buttons action with the specified order and buttons
-            var action = TelegramSendButtonsAction.Create(
+            var action = TelegramAction.Create(
                 order: request.Order,
                 buttons: createButtonsResults
                     .Select(button => button.Value)
                     .ToList());
 
             // Add the action to the command
-            var result = command.AddSendButtonAction(action);
+            var result = command.AddAction(action);
 
             // Save changes to the database
             await unitOfWork

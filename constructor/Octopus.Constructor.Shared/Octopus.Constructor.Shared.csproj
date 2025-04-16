@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Octopus.Constructor.Domain\Octopus.Constructor.Domain.csproj" />
+  </ItemGroup>
+
 </Project>

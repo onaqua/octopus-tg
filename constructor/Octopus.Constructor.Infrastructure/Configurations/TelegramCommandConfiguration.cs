@@ -9,46 +9,13 @@ internal sealed class TelegramCommandConfiguration : IEntityTypeConfiguration<Te
     public void Configure(EntityTypeBuilder<TelegramCommand> builder)
     {
         builder
-            .HasMany(x => x.SendButtonActions)
+            .HasMany(x => x.TelegramAction)
             .WithOne(x => x.Command)
             .HasForeignKey(x => x.TelegramCommandId)
             .OnDelete(DeleteBehavior.Cascade);
 
         builder
-            .Navigation(x => x.SendButtonActions)
-            .AutoInclude()
-            .UsePropertyAccessMode(PropertyAccessMode.Field);
-
-        builder
-            .HasMany(x => x.SendDocumentActions)
-            .WithOne(x => x.Command)
-            .HasForeignKey(x => x.TelegramCommandId)
-            .OnDelete(DeleteBehavior.Cascade);
-
-        builder
-            .Navigation(x => x.SendDocumentActions)
-            .AutoInclude()
-            .UsePropertyAccessMode(PropertyAccessMode.Field);
-
-        builder
-            .HasMany(x => x.SendMessageActions)
-            .WithOne(x => x.Command)
-            .HasForeignKey(x => x.TelegramCommandId)
-            .OnDelete(DeleteBehavior.Cascade);
-
-        builder
-            .Navigation(x => x.SendMessageActions)
-            .AutoInclude()
-            .UsePropertyAccessMode(PropertyAccessMode.Field);
-
-        builder
-            .HasMany(x => x.SendRequestActions)
-            .WithOne(x => x.Command)
-            .HasForeignKey(x => x.TelegramCommandId)
-            .OnDelete(DeleteBehavior.Cascade);
-
-        builder
-            .Navigation(x => x.SendRequestActions)
+            .Navigation(x => x.TelegramAction)
             .AutoInclude()
             .UsePropertyAccessMode(PropertyAccessMode.Field);
     }

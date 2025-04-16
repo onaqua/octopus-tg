@@ -21,7 +21,7 @@ public static partial class CreateTemplate
             {
                 return template;
             }
-            
+
             await templatesRepository
                 .AddAsync(template, cancellationToken);
 

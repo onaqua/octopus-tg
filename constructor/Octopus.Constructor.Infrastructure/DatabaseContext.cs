@@ -13,7 +13,7 @@ public class DatabaseContext : DbContext
     public DbSet<TelegramButton> TelegramButtons { get; set; }
     public DbSet<TelegramCommand> TelegramCommands { get; set; }
 
-    public DbSet<TelegramSendButtonsAction> TelegramSendButtonActions { get; set; }
+    public DbSet<TelegramAction> TelegramSendButtonActions { get; set; }
     public DbSet<TelegramSendMessageAction> TelegramSendMessageActions { get; set; }
     public DbSet<TelegramSendRequestAction> TelegramSendRequestActions { get; set; }
     public DbSet<TelegramSendDocumentAction> TelegramSendDocumentActions { get; set; }

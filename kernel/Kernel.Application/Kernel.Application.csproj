@@ -7,8 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\kernel\Kernel.Infrastructure\Kernel.Infrastructure.csproj" />
-    <ProjectReference Include="..\Octopus.Bot.Domain\Octopus.Bot.Domain.csproj" />
+    <PackageReference Include="Ardalis.Result" />
+    <PackageReference Include="FastEndpoints" />
+    <PackageReference Include="FluentValidation" />
+    <PackageReference Include="MediatR" />
   </ItemGroup>
 
 </Project>

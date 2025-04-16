@@ -2,7 +2,7 @@
 using FluentValidation;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Octopus.Constructor.Application.Features.Templates;
+using Octopus.Kernel.Application.Features.Templates;
 using System.Reflection;
 
 namespace Octopus.Constructor.Application;

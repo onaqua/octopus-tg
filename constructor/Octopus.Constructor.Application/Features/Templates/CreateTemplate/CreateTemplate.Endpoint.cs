@@ -1,5 +1,6 @@
 ﻿using MediatR;
 using Octopus.Constructor.Domain;
+using Octopus.Kernel.Application;
 
 namespace Octopus.Constructor.Application.Features.Templates.CreateTemplate;
 

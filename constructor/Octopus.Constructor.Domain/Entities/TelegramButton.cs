@@ -10,7 +10,7 @@ public class TelegramButton : EntityBase<Guid>
     public string Trigger { get; private set; } = null!;
 
     [JsonIgnore]
-    public TelegramSendButtonsAction Action { get; private set; } = null!;
+    public TelegramAction Action { get; private set; } = null!;
 
     public Guid ActionId { get; private set; }
 

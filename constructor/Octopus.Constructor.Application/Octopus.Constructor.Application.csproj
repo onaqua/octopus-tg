@@ -13,6 +13,7 @@
     <PackageReference Include="Microsoft.AspNetCore.Hosting" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\kernel\Kernel.Application\Kernel.Application.csproj" />
     <ProjectReference Include="..\Octopus.Constructor.Infrastructure\Octopus.Constructor.Infrastructure.csproj" />
     <ProjectReference Include="..\Octopus.Constructor.Shared\Octopus.Constructor.Shared.csproj" />
   </ItemGroup>

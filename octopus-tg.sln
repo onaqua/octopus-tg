@@ -44,6 +44,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kernel.Domain", "kernel\Ker
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kernel.Infrastructure", "kernel\Kernel.Infrastructure\Kernel.Infrastructure.csproj", "{40D9FB6E-F94A-4C4B-A8D1-B2103FA3BA32}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kernel.Application", "kernel\Kernel.Application\Kernel.Application.csproj", "{23EBD4FE-B579-43F2-943B-2ECA5B77C5A4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -106,6 +108,10 @@ Global
 		{40D9FB6E-F94A-4C4B-A8D1-B2103FA3BA32}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{40D9FB6E-F94A-4C4B-A8D1-B2103FA3BA32}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{40D9FB6E-F94A-4C4B-A8D1-B2103FA3BA32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23EBD4FE-B579-43F2-943B-2ECA5B77C5A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23EBD4FE-B579-43F2-943B-2ECA5B77C5A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23EBD4FE-B579-43F2-943B-2ECA5B77C5A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23EBD4FE-B579-43F2-943B-2ECA5B77C5A4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -125,6 +131,7 @@ Global
 		{577A9370-AD3D-417C-B055-3721FF2EA3B2} = {72B0A5AD-DD77-4226-8A3F-631DF083C394}
 		{74F77F88-F60B-42EB-85E8-2ACAAE6B7DBD} = {738EF576-3F2E-4F93-B0EF-E704FD544F84}
 		{40D9FB6E-F94A-4C4B-A8D1-B2103FA3BA32} = {738EF576-3F2E-4F93-B0EF-E704FD544F84}
+		{23EBD4FE-B579-43F2-943B-2ECA5B77C5A4} = {738EF576-3F2E-4F93-B0EF-E704FD544F84}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {41569091-4B0B-448D-8536-962882F8CC24}

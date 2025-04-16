@@ -6,4 +6,15 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Refit" />
+    <PackageReference Include="Telegram.Bot" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\constructor\Octopus.Constructor.Shared\Octopus.Constructor.Shared.csproj" />
+    <ProjectReference Include="..\..\kernel\Kernel.Application\Kernel.Application.csproj" />
+    <ProjectReference Include="..\Octopus.Bot.Domain\Octopus.Bot.Domain.csproj" />
+  </ItemGroup>
+
 </Project>
